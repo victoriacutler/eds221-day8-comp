@@ -6,94 +6,133 @@ output:
     toc: TRUE
     toc_float: TRUE
     number_sections: TRUE
-  
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 **Allison Horst, PhD**
 
 Assistant Teaching Professor, Bren School, UC Santa Barbara
 
-- ahorst@ucsb.edu
-- [\@allison_horst](https://twitter.com/allison_horst)
+-   [ahorst\@ucsb.edu](mailto:ahorst@ucsb.edu){.email}
+-   [\@allison_horst](https://twitter.com/allison_horst)
 
 ## Topics
 
--  Conceptual hierarchy of data viz
-- `ggplot2` basics review
-    - Aesthetic mapping
-    - Themes
-    - Labels
-    - Facets (& facet grids vs facet wraps)
-    - Getting things in order (e.g. fct_reorder)
-- Advanced customization in `ggplot2`
-    - `scales` for thoughtful breaks and labels
-    - ...and color schemes (+ `paletteer`!)
-    - In the weeds of themes (gridlines, panel colors, margins, etc.)
-    - Direct annotation (as an alternative to legends)
-    - Repulsive labels (e.g. `ggrepel`)
-    - Highlighting for clarity (e.g. with `gghighlight`)
-- Compound figures with `patchwork`
-- A few new graph types to consider
-    - Marginal plot
-    - Beeswarm plots with `ggbeeswarm`
-    - Heatmaps with `geom_tile()`
-- Export & save your graphs
-- Keep learning
-
-
+-   Conceptual hierarchy of data viz
+-   `ggplot2` basics review
+    -   Aesthetic mapping
+    -   Themes
+    -   Labels
+    -   Facets (& facet grids vs facet wraps)
+    -   Getting things in order (e.g. fct_reorder)
+-   Advanced customization in `ggplot2`
+    -   `scales` for thoughtful breaks and labels
+    -   ...and color schemes (+ `paletteer`!)
+    -   In the weeds of themes (gridlines, panel colors, margins, etc.)
+    -   Direct annotation (as an alternative to legends)
+    -   Repulsive labels (e.g. `ggrepel`)
+    -   Highlighting for clarity (e.g. with `gghighlight`)
+-   Compound figures with `patchwork`
+-   A few new graph types to consider
+    -   Marginal plot
+    -   Beeswarm plots with `ggbeeswarm`
+    -   Heatmaps with `geom_tile()`
+-   Export & save your graphs
+-   Keep learning
 
 # Citations and data
 
 ## R packages
 
-Thank you to developers, sharers, teachers, and the entire R community for building things and creating resources to help us all learn. I'd especially like to thank developers & maintainers for the following packages: 
+Thank you to developers, sharers, teachers, and the entire R community
+for building things and creating resources to help us all learn. I'd
+especially like to thank developers & maintainers for the following
+packages:
 
-- `tidyverse`: Wickham et al., (2019). Welcome to the tidyverse. Journal of
-  Open Source Software, 4(43), 1686,
-  https://doi.org/10.21105/joss.01686
-- `ggplot2`: H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New
-  York, 2016.
-- `ggrepel`: Kamil Slowikowski (2021). ggrepel: Automatically Position Non-Overlapping Text
-  Labels with 'ggplot2'. R package version 0.9.1.
-  https://github.com/slowkow/ggrepel
-- `gghighlight`: Hiroaki Yutani (2020). gghighlight: Highlight Lines and Points in 'ggplot2'. R
-  package version 0.3.1. https://github.com/yutannihilation/gghighlight/
-- `R Markdown`: Yihui Xie and J.J. Allaire and Garrett Grolemund (2018). R Markdown: The
-  Definitive Guide. Chapman and Hall/CRC. ISBN 9781138359338. URL
-  https://bookdown.org/yihui/rmarkdown.
-- `sf`: Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector
-  Data. The R Journal 10 (1), 439-446, https://doi.org/10.32614/RJ-2018-009
-- `paletteer`: See AUTHORS file. (2021). paletteer: Comprehensive Collection of Color Palettes. R package version 1.3.0. https://github.com/EmilHvitfeldt/paletteer
-- `gapminder`: Jennifer Bryan (2017). gapminder: Data from Gapminder.
-  https://github.com/jennybc/gapminder, http://www.gapminder.org/data/,
-  https://doi.org/10.5281/zenodo.594018.
-- `janitor`:Sam Firke (2021). janitor: Simple Tools for Examining and Cleaning Dirty Data. R
-  package version 2.1.0. https://github.com/sfirke/janitor
-  
+-   `tidyverse`: Wickham et al., (2019). Welcome to the tidyverse.
+    Journal of Open Source Software, 4(43), 1686,
+    <https://doi.org/10.21105/joss.01686>
+-   `ggplot2`: H. Wickham. ggplot2: Elegant Graphics for Data Analysis.
+    Springer-Verlag New York, 2016.
+-   `ggrepel`: Kamil Slowikowski (2021). ggrepel: Automatically Position
+    Non-Overlapping Text Labels with 'ggplot2'. R package version 0.9.1.
+    <https://github.com/slowkow/ggrepel>
+-   `gghighlight`: Hiroaki Yutani (2020). gghighlight: Highlight Lines
+    and Points in 'ggplot2'. R package version 0.3.1.
+    <https://github.com/yutannihilation/gghighlight/>
+-   `R Markdown`: Yihui Xie and J.J. Allaire and Garrett Grolemund
+    (2018). R Markdown: The Definitive Guide. Chapman and Hall/CRC.
+    ISBN 9781138359338. URL <https://bookdown.org/yihui/rmarkdown>.
+-   `sf`: Pebesma, E., 2018. Simple Features for R: Standardized Support
+    for Spatial Vector Data. The R Journal 10 (1), 439-446,
+    <https://doi.org/10.32614/RJ-2018-009>
+-   `paletteer`: See AUTHORS file. (2021). paletteer: Comprehensive
+    Collection of Color Palettes. R package version 1.3.0.
+    <https://github.com/EmilHvitfeldt/paletteer>
+-   `gapminder`: Jennifer Bryan (2017). gapminder: Data from Gapminder.
+    <https://github.com/jennybc/gapminder>,
+    <http://www.gapminder.org/data/>,
+    <https://doi.org/10.5281/zenodo.594018>.
+-   `janitor`:Sam Firke (2021). janitor: Simple Tools for Examining and
+    Cleaning Dirty Data. R package version 2.1.0.
+    <https://github.com/sfirke/janitor>
+
 ## Lizard size measurement data
 
-Our data are a curated subset from [Jornada Basin Long Term Ecological Research site](https://lter.jornada.nmsu.edu/) in New Mexico, part of the US Long Term Ecological Research (LTER) network: 
+Our data are a curated subset from [Jornada Basin Long Term Ecological
+Research site](https://lter.jornada.nmsu.edu/) in New Mexico, part of
+the US Long Term Ecological Research (LTER) network:
 
-- Lightfoot, D. and W.G. Whitford. 2020. Lizard pitfall trap data from 11 NPP study locations at the Jornada Basin LTER site, 1989-2006 ver 37. Environmental Data Initiative. https://doi.org/10.6073/pasta/4a6e258fb49c31e222ecbbcfd128967f
+-   Lightfoot, D. and W.G. Whitford. 2020. Lizard pitfall trap data from
+    11 NPP study locations at the Jornada Basin LTER site, 1989-2006
+    ver 37. Environmental Data Initiative.
+    <https://doi.org/10.6073/pasta/4a6e258fb49c31e222ecbbcfd128967f>
 
-From the data package: "This data package contains data on lizards sampled by pitfall traps located at 11 consumer plots at Jornada Basin LTER site from 1989-2006. The objective of this study is to observe how shifts in vegetation resulting from desertification processes in the Chihuahaun desert have changed the spatial and temporal availability of resources for consumers. Desertification changes in the Jornada Basin include changes from grass to shrub dominated communities and major soil changes. If grassland systems respond to rainfall without significant lags, but shrub systems do not, then consumer species should reflect these differences. In addition, shifts from grassland to shrubland results in greater structural heterogeneity of the habitats. We hypothesized that consumer populations, diversity, and densities of some consumers will be higher in grasslands than in shrublands and will be related to the NPP of the sites. Lizards were captured in pitfall traps at the 11 LTER II/III consumer plots (a subset of NPP plots) quarterly for 2 weeks per quarter. Variables measured include species, sex, recapture status, snout-vent length, total length, weight, and whether tail is broken or whole. This study is complete." 
+From the data package: "This data package contains data on lizards
+sampled by pitfall traps located at 11 consumer plots at Jornada Basin
+LTER site from 1989-2006. The objective of this study is to observe how
+shifts in vegetation resulting from desertification processes in the
+Chihuahaun desert have changed the spatial and temporal availability of
+resources for consumers. Desertification changes in the Jornada Basin
+include changes from grass to shrub dominated communities and major soil
+changes. If grassland systems respond to rainfall without significant
+lags, but shrub systems do not, then consumer species should reflect
+these differences. In addition, shifts from grassland to shrubland
+results in greater structural heterogeneity of the habitats. We
+hypothesized that consumer populations, diversity, and densities of some
+consumers will be higher in grasslands than in shrublands and will be
+related to the NPP of the sites. Lizards were captured in pitfall traps
+at the 11 LTER II/III consumer plots (a subset of NPP plots) quarterly
+for 2 weeks per quarter. Variables measured include species, sex,
+recapture status, snout-vent length, total length, weight, and whether
+tail is broken or whole. This study is complete."
 
-There are 16 total variables in the `lizards.csv` data we'll read in. The ones we'll use in this workshop are: 
+There are 16 total variables in the `lizards.csv` data we'll read in.
+The ones we'll use in this workshop are:
 
-- `date`: data collection date
-- `scientific_name`: lizard scientific name
-- `common_name`: lizard common name
-- `site`: research site code
-- `sex`: lizard sex (m = male; f = female; j = juvenile)
-- `sv_length`: snout-vent length (millimeters)
-- `total_length`: body length (millimeters)
-- `toe_num`: toe mark number
-- `weight`: body weight (grams)
-- `tail`: tail condition (b = broken; w = whole)
+-   `date`: data collection date
+-   `scientific_name`: lizard scientific name
+-   `common_name`: lizard common name
+-   `site`: research site code
+-   `sex`: lizard sex (m = male; f = female; j = juvenile)
+-   `sv_length`: snout-vent length (millimeters)
+-   `total_length`: body length (millimeters)
+-   `toe_num`: toe mark number
+-   `weight`: body weight (grams)
+-   `tail`: tail condition (b = broken; w = whole)
 
 ## Jornada vegetation spatial data
 
-From [Jornada Basin LTER Spatial Data](https://lter.jornada.nmsu.edu/spatial-data/): Dominant Vegetation of the JER and CDRRC in 1998  (Download KMZ 3972 KB) Dominant and subdominant vegetation on the Jornada Experimental Range and Chihuahuan Desert Rangeland Research Center in 1998. Published in Gibbens, R. P., McNeely, R. P., Havstad, K. M., Beck, R. F., & Nolen, B. (2005). Vegetation changes in the Jornada Basin from 1858 to 1998. Journal of Arid Environments, 61(4), 651-668.  
+From [Jornada Basin LTER Spatial
+Data](https://lter.jornada.nmsu.edu/spatial-data/): Dominant Vegetation
+of the JER and CDRRC in 1998 (Download KMZ 3972 KB) Dominant and
+subdominant vegetation on the Jornada Experimental Range and Chihuahuan
+Desert Rangeland Research Center in 1998. Published in Gibbens, R. P.,
+McNeely, R. P., Havstad, K. M., Beck, R. F., & Nolen, B. (2005).
+Vegetation changes in the Jornada Basin from 1858 to 1998. Journal of
+Arid Environments, 61(4), 651-668.
 
 # Set-up
 
@@ -101,12 +140,16 @@ From [Jornada Basin LTER Spatial Data](https://lter.jornada.nmsu.edu/spatial-dat
 
 You can get the workshop materials in two ways:
 
-1. Clone the workshop repo from GitHub to work locally
-2. Create an RStudio Cloud account, and click [HERE](https://rstudio.cloud/project/2181259) to get to the project. Make sure you click on 'Make permanent copy' so your updates & notes will be stored.
+1.  Clone the workshop repo from GitHub to work locally
+2.  Create an RStudio Cloud account, and click
+    [HERE](https://rstudio.cloud/project/2181259) to get to the project.
+    Make sure you click on 'Make permanent copy' so your updates & notes
+    will be stored.
 
 ## Create a new R Markdown document or R script
 
-Allison will be working in R Markdown, but you can follow along in either an .Rmd or R script. 
+Allison will be working in R Markdown, but you can follow along in
+either an .Rmd or R script.
 
 ## Attach R packages
 
@@ -142,20 +185,21 @@ library(sf)
 lizards <- read_csv(here("data_tidy", "lizards.csv"))
 ```
 
-
 # `ggplot2` Basics Review
 
-First, we'll cover some `ggplot2` basics to create the foundation that we'll make our great customized data visualization on. 
+First, we'll cover some `ggplot2` basics to create the foundation that
+we'll make our great customized data visualization on.
 
 ## The essentials
 
-When we start creating a `ggplot` graph, we need three basic building blocks:
+When we start creating a `ggplot` graph, we need three basic building
+blocks:
 
-1. We're using `ggplot`
-2. What data we want to use in our graph 
-3. What type of graph we're creating
+1.  We're using `ggplot`
+2.  What data we want to use in our graph
+3.  What type of graph we're creating
 
-For example: 
+For example:
 
 ```{r, eval = FALSE}
 # ggplot essential pieces, 3 ways (that do the same thing):
@@ -172,51 +216,67 @@ ggplot(data = lizards) +
 ggplot() +
   geom_point(data = lizards, aes(x = total_length, y = weight))
 ```
-Which all produce the same thing: 
+
+Which all produce the same thing:
 
 ```{r, echo = FALSE}
 ggplot() +
   geom_point(data = lizards, aes(x = total_length, y = weight))
 ```
 
-Which makes changing graph types straightforward by updating the `geom_`:
+Which makes changing graph types straightforward by updating the
+`geom_`:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
   geom_line() # Bad idea, just demonstrating a geom switch.
 ```
 
-Keep in mind that some graph types only require one variable - for example, `geom_histogram`:
+Keep in mind that some graph types only require one variable - for
+example, `geom_histogram`:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length)) +
   geom_histogram()
 ```
 
-And remember to carefully consider the *type* of data you're trying to visualize, which will help to direct the graph type. For example, a jitterplot usually has one categorical variable and one continuous variable: 
+And remember to carefully consider the *type* of data you're trying to
+visualize, which will help to direct the graph type. For example, a
+jitterplot usually has one categorical variable and one continuous
+variable:
 
 ```{r}
 ggplot(data = lizards, aes(y = common_name, x = weight)) +
   geom_jitter()
 ```
 
-**Not sure which type of graph is appropriate for your data?** My favorite resource is Yan Holtz' [From Data to Viz](https://www.data-to-viz.com/) - check it out, it is fun and amazing, and links to code examples from the [R Graph Gallery](https://www.r-graph-gallery.com/).
+**Not sure which type of graph is appropriate for your data?** My
+favorite resource is Yan Holtz' [From Data to
+Viz](https://www.data-to-viz.com/) - check it out, it is fun and
+amazing, and links to code examples from the [R Graph
+Gallery](https://www.r-graph-gallery.com/).
 
 ## Aesthetic mapping
 
 ### Updating based on a constant? NO `aes()`!
-To change aesthetics of a graph based on a constant (e.g. "Make all the points BLUE"), we can add the information directly to the relevant `geom_` layer. Some things to keep in mind: 
 
-- `fill`: updates fill colors (e.g. column, density, violin, & boxplot interior fill color)
-- `color`: updates point & border line colors (generally)
-- `shape`: update point style
-- `alpha`: update transparency (0 = transparent, 1 = opaque)
-- `size`: point size or line width
-- `linetype`: update the line type (e.g. "dotted", "dashed", "dotdash", etc.)
+To change aesthetics of a graph based on a constant (e.g. "Make all the
+points BLUE"), we can add the information directly to the relevant
+`geom_` layer. Some things to keep in mind:
 
-If you are updating these by referring to a constant value, they **should not be within an `aes()`**. 
+-   `fill`: updates fill colors (e.g. column, density, violin, & boxplot
+    interior fill color)
+-   `color`: updates point & border line colors (generally)
+-   `shape`: update point style
+-   `alpha`: update transparency (0 = transparent, 1 = opaque)
+-   `size`: point size or line width
+-   `linetype`: update the line type (e.g. "dotted", "dashed",
+    "dotdash", etc.)
 
-For example, let's make some nightmares: 
+If you are updating these by referring to a constant value, they
+**should not be within an `aes()`**.
+
+For example, let's make some nightmares:
 
 ```{r}
 ggplot(data = lizards, aes(x = weight)) +
@@ -226,7 +286,7 @@ ggplot(data = lizards, aes(x = weight)) +
                  linetype = "dotted")
 ```
 
-Some shapes have both a fill and color aesthetic: 
+Some shapes have both a fill and color aesthetic:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -239,14 +299,16 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
 
 ### Updating an aesthetic based on a variable? YES `aes()`!
 
-If you want to map a variable onto a graph aesthetic (e.g., point color should be based on *lizard species*), put it within `aes()`. 
+If you want to map a variable onto a graph aesthetic (e.g., point color
+should be based on *lizard species*), put it within `aes()`.
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
   geom_point(aes(color = common_name, size = total_length))
 ```
 
-These can be used in combination. For example, if we want the color to be based on species, but the transparency for all points is 0.3:
+These can be used in combination. For example, if we want the color to
+be based on species, but the transparency for all points is 0.3:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -255,13 +317,14 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
 
 ## Themes
 
-Quick reminder: yeah there are some built-in themes you can add with `+ theme_*()`. 
+Quick reminder: yeah there are some built-in themes you can add with
+`+ theme_*()`.
 
-A few useful baselines are: 
+A few useful baselines are:
 
-- `theme_minimal()`: minimal theme
-- `theme_bw()`: also pretty good for some stuff
-- `theme_light()`: a nice light one
+-   `theme_minimal()`: minimal theme
+-   `theme_bw()`: also pretty good for some stuff
+-   `theme_light()`: a nice light one
 
 ```{r}
 ggplot(data = lizards, aes(x = site, y = weight)) +
@@ -281,18 +344,25 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
        title = "Lizard size")
 ```
 
-We'll learn a few more advanced label skills later on. 
+We'll learn a few more advanced label skills later on.
 
 ## Facetting
 
-Sometimes it's useful to split up information in a graph into separate panels. For example, maybe we want to have a separate graph of total length versus weight for *each lizard species*. That would be really tedious to create them all manually from subsets. Instead, we'll facet by distinct groups within a variable. 
+Sometimes it's useful to split up information in a graph into separate
+panels. For example, maybe we want to have a separate graph of total
+length versus weight for *each lizard species*. That would be really
+tedious to create them all manually from subsets. Instead, we'll facet
+by distinct groups within a variable.
 
 We'll learn two ways to do this:
 
-- `facet_wrap()`: the one where you give it one faceting variable and the panels get wrapped into a grid
-- `facet_grid()`: the one where you make a grid based on row & column faceting variables
+-   `facet_wrap()`: the one where you give it one faceting variable and
+    the panels get wrapped into a grid
+-   `facet_grid()`: the one where you make a grid based on row & column
+    faceting variables
 
-For example, let's say we just want each species to have its own panel. Then we can use `facet_wrap()`:
+For example, let's say we just want each species to have its own panel.
+Then we can use `facet_wrap()`:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -300,7 +370,9 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
   facet_wrap(~common_name, ncol = 3, scales = "free")
 ```
 
-But what if we want to make a grid where the panels are split across groups by lizard sex and if it has a broken tail or not? Since we have two variables being used to create our grid, we'll use `facet_grid()`:
+But what if we want to make a grid where the panels are split across
+groups by lizard sex and if it has a broken tail or not? Since we have
+two variables being used to create our grid, we'll use `facet_grid()`:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -310,7 +382,10 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
 
 ## Getting things in order
 
-`ggplot` loves putting things in alphabetical order - but that's rarely the order you actually want things in if you have categorical groups. Let's find some total counts of lizards in the dataset by common name, then make a column graph: 
+`ggplot` loves putting things in alphabetical order - but that's rarely
+the order you actually want things in if you have categorical groups.
+Let's find some total counts of lizards in the dataset by common name,
+then make a column graph:
 
 ```{r}
 lizard_counts <- lizards %>% 
@@ -323,13 +398,13 @@ ggplot(data = lizard_counts, aes(y = fct_reorder(common_name, n), x = n)) +
 
 ## `ggplot` basics: synthesis examples
 
-**Example 1:** A quick review of basics, including: 
+**Example 1:** A quick review of basics, including:
 
-- `ggplot` essentials
-- aesthetic mapping
-- themes
-- `facet_wrap` & `facet_grid`
-- labels with `labs`
+-   `ggplot` essentials
+-   aesthetic mapping
+-   themes
+-   `facet_wrap` & `facet_grid`
+-   labels with `labs`
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -343,9 +418,10 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
   facet_wrap(~common_name, scales = "free")
 ```
 
-**Example 2:** Reminders of position, `facet_grid`, and factor reordering
+**Example 2:** Reminders of position, `facet_grid`, and factor
+reordering
 
-Let's make a stacked column graph of lizard species by site: 
+Let's make a stacked column graph of lizard species by site:
 
 ```{r}
 ggplot(data = lizards, aes(y = fct_infreq(common_name))) +
@@ -363,29 +439,48 @@ ggplot(data = lizards, aes(y = fct_infreq(common_name))) +
 
 ## An unsung hero: `scales`
 
-The [`scales`](https://scales.r-lib.org/index.html) package in R is truly an unsung hero of finalizing `ggplot` graphs. To hear more, I strongly recommend watching Dana Seidel's 20 minute talk on [*The little package that could: Taking visualizations to the next level with the scales package*](https://rstudio.com/resources/rstudioconf-2020/the-little-package-that-could-taking-visualizations-to-the-next-level-with-the-scales-package/) from rstudio::conf(2020). 
+The [`scales`](https://scales.r-lib.org/index.html) package in R is
+truly an unsung hero of finalizing `ggplot` graphs. To hear more, I
+strongly recommend watching Dana Seidel's 20 minute talk on [*The little
+package that could: Taking visualizations to the next level with the
+scales
+package*](https://rstudio.com/resources/rstudioconf-2020/the-little-package-that-could-taking-visualizations-to-the-next-level-with-the-scales-package/)
+from rstudio::conf(2020).
 
-Why does that matter to us? *Because a whole lot of the subtle things that make a graph way better are updating using the scales suite of helpful functions.* 
+Why does that matter to us? *Because a whole lot of the subtle things
+that make a graph way better are updating using the scales suite of
+helpful functions.*
 
-For a complete list of scales functions & usage, see: https://scales.r-lib.org/index.html
+For a complete list of scales functions & usage, see:
+<https://scales.r-lib.org/index.html>
 
 ### Thoughtful breaks, limits & labels
 
-Little things make a big difference in data visualization. Just like we should take great care to make axis labels useful and complete, we also need to think about how values are communicated for our different variables. 
+Little things make a big difference in data visualization. Just like we
+should take great care to make axis labels useful and complete, we also
+need to think about how values are communicated for our different
+variables.
 
-In 2-D data visualization, that means customizing your breaks, limits, & tick mark labels & formatting. From Hadley Wickham & Dana Seidel: "The most common use of the `scales` package is to control the appearance of axis and legend labels. Use a `break_` function to control how breaks are generated from the limits, and a `label_` function to control how breaks are turned in to labels." 
+In 2-D data visualization, that means customizing your breaks, limits, &
+tick mark labels & formatting. From Hadley Wickham & Dana Seidel: "The
+most common use of the `scales` package is to control the appearance of
+axis and legend labels. Use a `break_` function to control how breaks
+are generated from the limits, and a `label_` function to control how
+breaks are turned in to labels."
 
-Let's explore some different ways to update breaks and labels. 
+Let's explore some different ways to update breaks and labels.
 
 #### Updating breaks & labels
 
-The important thing: know *what type of variable you have on each axis* so that you know what `scale_` version to call. For example: 
+The important thing: know *what type of variable you have on each axis*
+so that you know what `scale_` version to call. For example:
 
-- For dates: `scale_*_date()`
-- For continuous variables: `scale_*_continuous()`
-- For discrete variables: `scale_*_discrete()`
+-   For dates: `scale_*_date()`
+-   For continuous variables: `scale_*_continuous()`
+-   For discrete variables: `scale_*_discrete()`
 
-Within those layers added to your plot, you can update the `breaks = `, `limits = `, `labels = ` and `expand = `options. 
+Within those layers added to your plot, you can update the `breaks =`,
+`limits =`, `labels =` and `expand =`options.
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -400,7 +495,8 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
   theme_light()
 ```
 
-But you can also do so much more! For example, you can convert to a log scale: 
+But you can also do so much more! For example, you can convert to a log
+scale:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -408,7 +504,8 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
   scale_x_log10()
 ```
 
-And it is really nice for formatting axis dates. Let's make a version of the data with lizard counts by date to try a few things: 
+And it is really nice for formatting axis dates. Let's make a version of
+the data with lizard counts by date to try a few things:
 
 ```{r}
 lizard_counts <- lizards %>% 
@@ -426,15 +523,27 @@ ggplot(data = lizard_counts, aes(x = date, y = n)) +
   scale_x_date(breaks = scales::breaks_pretty())
 ```
 
-Explore the different options for `label_*` that appear once you start typing it in...you'll see a bunch of different options. Make your tick marks currencies, scientific notation, or more - just by updating the labels within the correct `scale_`! Go ahead & try it out, it's pretty amazing (and see the many different label options here: https://scales.r-lib.org/reference/index.html). 
+Explore the different options for `label_*` that appear once you start
+typing it in...you'll see a bunch of different options. Make your tick
+marks currencies, scientific notation, or more - just by updating the
+labels within the correct `scale_`! Go ahead & try it out, it's pretty
+amazing (and see the many different label options here:
+<https://scales.r-lib.org/reference/index.html>).
 
 ### Customized aesthetics with `scale_` functions
 
-We've learned to use `scales` functions to update breaks and labels. It is also useful for updating aesthetics, for example to customize color gradients, set size bins, and more. 
+We've learned to use `scales` functions to update breaks and labels. It
+is also useful for updating aesthetics, for example to customize color
+gradients, set size bins, and more.
 
-Again, it is very important to know **what aesthetic you are trying to update.**
+Again, it is very important to know **what aesthetic you are trying to
+update.**
 
-For example, is it a **fill** aesthetic you're hoping to customize? Then you might use `scale_fill_*()`. But if it is a **color** aesthetic, you'd use `scale_color_*()` functions. If it is the transparency, then `scale_alpha_*()`. If it is the shape, then `scale_shape_*()`. So make sure you know *which aesthetic you are hoping to change with scales!*
+For example, is it a **fill** aesthetic you're hoping to customize? Then
+you might use `scale_fill_*()`. But if it is a **color** aesthetic,
+you'd use `scale_color_*()` functions. If it is the transparency, then
+`scale_alpha_*()`. If it is the shape, then `scale_shape_*()`. So make
+sure you know *which aesthetic you are hoping to change with scales!*
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -457,7 +566,11 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
 
 ```
 
-There are also great options for *binning* colors for a continuous variable, including with the `scale_*_steps()` functions (see more: https://ggplot2.tidyverse.org/reference/scale_steps.html). For example, maybe in the graph above we want binned (instead of continuous gradient) color values:
+There are also great options for *binning* colors for a continuous
+variable, including with the `scale_*_steps()` functions (see more:
+<https://ggplot2.tidyverse.org/reference/scale_steps.html>). For
+example, maybe in the graph above we want binned (instead of continuous
+gradient) color values:
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -469,7 +582,6 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
 ```
 
 You can create a divergent binned scheme with `scale_*_steps2()`:
-
 
 ```{r}
 ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -490,7 +602,9 @@ ggplot(data = lizards, aes(x = total_length, y = weight)) +
                      breaks = seq(from = 10, to = 60, by = 10))
 ```
 
-What if we have a discrete variable? Let's make a boxplot of lizard lengths by species, then customize the fill color with a palette in `paletteer`: 
+What if we have a discrete variable? Let's make a boxplot of lizard
+lengths by species, then customize the fill color with a palette in
+`paletteer`:
 
 ```{r}
 ggplot(data = lizards, aes(x = common_name, y = total_length)) +
@@ -514,7 +628,9 @@ ggplot(data = lizards_mean, aes(y = common_name, x = total_length)) +
   theme_minimal()
 ```
 
-Cool let's try another one: Find counts of lizard by species, reorder factor levels by count, update aesthetic by color (removing redundant legend), customize color using something from `paletteer`:
+Cool let's try another one: Find counts of lizard by species, reorder
+factor levels by count, update aesthetic by color (removing redundant
+legend), customize color using something from `paletteer`:
 
 ```{r}
 lizard_n <- lizards %>% 
@@ -533,9 +649,13 @@ ggplot(data = lizard_n, aes(y = common_name, x = n)) +
 
 ## In the weeds of themes (gridlines, panel colors)
 
-Ask yourself: do you need those gridlines? Only if your audience needs to know whether values are above or below meaningful values - which can be useful, but oftentimes gridlines are really overused and make an entire plot feel more cluttered. 
+Ask yourself: do you need those gridlines? Only if your audience needs
+to know whether values are above or below meaningful values - which can
+be useful, but oftentimes gridlines are really overused and make an
+entire plot feel more cluttered.
 
-We can update gridline frequency by changing breaks, but we may want to customize them in other ways, too. 
+We can update gridline frequency by changing breaks, but we may want to
+customize them in other ways, too.
 
 ```{r}
 p <- ggplot(data = lizards, aes(x = total_length, y = weight)) +
@@ -566,13 +686,16 @@ p +
 
 ## Direct annotation and thresholds
 
-Legends are hard for audiences. Aligning values with important thresholds described in a figure captions is hard for audiences. It's not always possible, but depending on your presentation and the audience, consider adding direct annotation and thresholds to plots. 
+Legends are hard for audiences. Aligning values with important
+thresholds described in a figure captions is hard for audiences. It's
+not always possible, but depending on your presentation and the
+audience, consider adding direct annotation and thresholds to plots.
 
 We'll do that with a few little tools:
 
-- `annotate()`: add annotation manually by location
-- `geom_hline()`: add a horizontal line
-- `geom_vline()`: add a vertical line
+-   `annotate()`: add annotation manually by location
+-   `geom_hline()`: add a horizontal line
+-   `geom_vline()`: add a vertical line
 
 ```{r}
 p +
@@ -588,15 +711,31 @@ p +
   annotate("text", x = 350, y = mean(lizards$weight) + 2, label = "Mean weight", color = "red")
 ```
 
-### Apply what we've learned to something new! 
+### Apply what we've learned to something new!
 
-This data is from the [Mono Basin Clearinghouse](http://monobasinresearch.org/), and contains lake level (feet above sea level) for Mono Lake - a terminal saline lake in eastern California. 
+This data is from the [Mono Basin
+Clearinghouse](http://monobasinresearch.org/), and contains lake level
+(feet above sea level) for Mono Lake - a terminal saline lake in eastern
+California.
 
-Here are some important things to know when considering how to make our data viz: 
+Here are some important things to know when considering how to make our
+data viz:
 
-- LA Department of Water & Power took water unrestricted from streams feeding into Mono Lake starting in 1941 
-- Unrestricted water diversions continued until the landmark 1983 California Supreme Court decision, led by the Mono Lake Committee, that "The public trust … is an affirmation of the duty of the state to protect the people’s common heritage of streams, lakes, marshlands and tidelands..."
-- From *The Mono Basin Ecosystem: Effects of Changing Lake Level, published in 1987 by the Mono Basin Ecosystem Study Committee, Board on Environmental Studies and Toxicology*: "If the lake fell to levels at which the birds’ food sources were adversely affected, the bird populations would be reduced. The decrease in availability of brine shrimp for food would begin to affect those birds relying on them – eared grebes and California gulls – at a salinity of 120 g/L (lake level of 6360 ft)."
+-   LA Department of Water & Power took water unrestricted from streams
+    feeding into Mono Lake starting in 1941
+-   Unrestricted water diversions continued until the landmark 1983
+    California Supreme Court decision, led by the Mono Lake Committee,
+    that "The public trust ... is an affirmation of the duty of the
+    state to protect the people's common heritage of streams, lakes,
+    marshlands and tidelands..."
+-   From *The Mono Basin Ecosystem: Effects of Changing Lake Level,
+    published in 1987 by the Mono Basin Ecosystem Study Committee, Board
+    on Environmental Studies and Toxicology*: "If the lake fell to
+    levels at which the birds' food sources were adversely affected, the
+    bird populations would be reduced. The decrease in availability of
+    brine shrimp for food would begin to affect those birds relying on
+    them -- eared grebes and California gulls -- at a salinity of 120
+    g/L (lake level of 6360 ft)."
 
 ```{r}
 # Read in the data: 
@@ -659,7 +798,10 @@ ggplot(data = two_lizards, aes(x = total_length, y = weight)) +
 
 ## Repulsive labels (e.g. `ggrepel`)
 
-Direct labeling with a bunch of groups is challenging - `ggrepel` is here to help! It makes automatic repulsive labels. Let's make a subset of Western Whiptails at the "sand" site, then add repulsive labels by toe number. 
+Direct labeling with a bunch of groups is challenging - `ggrepel` is
+here to help! It makes automatic repulsive labels. Let's make a subset
+of Western Whiptails at the "sand" site, then add repulsive labels by
+toe number.
 
 ```{r}
 wwc_lizards <- lizards %>% 
@@ -670,7 +812,9 @@ ggplot(data = wwc_lizards, aes(x = total_length, y = weight)) +
   geom_text_repel(aes(label = toe_num), size = 3, max.overlaps = 20, show.legend = FALSE) 
 ```
 
-Let's try it with a different dataset, `gapminder` ("Excerpt of the Gapminder data on life expectancy, GDP per capita, and population by country.") 
+Let's try it with a different dataset, `gapminder` ("Excerpt of the
+Gapminder data on life expectancy, GDP per capita, and population by
+country.")
 
 ```{r}
 gapminder %>% 
@@ -682,9 +826,11 @@ gapminder %>%
 
 ## Highlighting for clarity (e.g. with `gghighlight`)
 
-This can be particularly useful if you have made a bunch of observations or series, and you want to highlight some to make your audience's life easier. 
+This can be particularly useful if you have made a bunch of observations
+or series, and you want to highlight some to make your audience's life
+easier.
 
-Add `gghighlight()` to your `ggplot` to specify highlighting conditions. 
+Add `gghighlight()` to your `ggplot` to specify highlighting conditions.
 
 ```{r}
 p +
@@ -704,9 +850,11 @@ q
 
 # Compound figures with `patchwork`
 
-Patchwork makes it easier to put multiple figures together into a single graphic -- and to do some efficient theming while you're at it. 
+Patchwork makes it easier to put multiple figures together into a single
+graphic -- and to do some efficient theming while you're at it.
 
-Let's store a couple of different graphs (we already have `p` and `q` stored): 
+Let's store a couple of different graphs (we already have `p` and `q`
+stored):
 
 ```{r}
 (p | q) & # & means it's applied to both plots! 
@@ -763,10 +911,10 @@ ggplot(data = whiptails, aes(x = sex, y = weight)) +
   theme_minimal()
 ```
 
-
 ## A heatmap with `geom_tile()`
 
-Heatmaps are a great way to see trends across groups. Here, we'll create one to visualize lizard counts by species and site.
+Heatmaps are a great way to see trends across groups. Here, we'll create
+one to visualize lizard counts by species and site.
 
 ```{r}
 # Get the counts: 
@@ -786,7 +934,8 @@ ggplot(data = lizard_counts, aes(x = year, y = common_name)) +
 
 ## Make a map!
 
-Let's make a map using some of the skills we've learned to customize our ggplots: 
+Let's make a map using some of the skills we've learned to customize our
+ggplots:
 
 ```{r}
 # First, read in the Jornada Basin vegetation data: 
@@ -820,13 +969,13 @@ ggplot() +
 # For next year: how would you change increments of lat / lon on x & y axis? See coord_map()
 ```
 
-
-
 # Export your graphs & figures
 
-Use `ggsave()` to export your figures, setting the dimensions, dpi, and more. The default in `ggsave()` is to save "the last plot that you displayed, using the size of the current graphics device." 
+Use `ggsave()` to export your figures, setting the dimensions, dpi, and
+more. The default in `ggsave()` is to save "the last plot that you
+displayed, using the size of the current graphics device."
 
-See `?ggsave` for documentation. 
+See `?ggsave` for documentation.
 
 ```{r, eval = FALSE}
 ggsave(filename = "file_name.png", width = 6, height = 4)
@@ -834,21 +983,29 @@ ggsave(filename = "file_name.png", width = 6, height = 4)
 
 # Learn more
 
-Here are some of my favorite resources for building advanced data visualization tools in `ggplot2`, learning about new types of graphs, and choosing an appropriate graph type: 
+Here are some of my favorite resources for building advanced data
+visualization tools in `ggplot2`, learning about new types of graphs,
+and choosing an appropriate graph type:
 
 ## Books
 
-- Claus Wilke's [*Fundamentals of Data Visualization*](https://clauswilke.com/dataviz/index.html)
+-   Claus Wilke's [*Fundamentals of Data
+    Visualization*](https://clauswilke.com/dataviz/index.html)
 
-- Kieran Healy's [*Data Visualization*](https://kieranhealy.org/publications/dataviz/)
+-   Kieran Healy's [*Data
+    Visualization*](https://kieranhealy.org/publications/dataviz/)
 
 ## `ggplot2` tutorials and examples
 
-- [Cedric Scherer](https://twitter.com/CedScherer)'s ["A `ggplot2` tutorial for beautiful plotting in R"](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/#legends)
-- More about [`scales`](https://scales.r-lib.org/)
+-   [Cedric Scherer](https://twitter.com/CedScherer)'s ["A `ggplot2`
+    tutorial for beautiful plotting in
+    R"](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/#legends)
+-   More about [`scales`](https://scales.r-lib.org/)
 
+## Data viz inspiration
 
-## Data viz inspiration 
-
-- [The R Graph Gallery](https://www.r-graph-gallery.com/) by [Yan Holtz]()
-- [From Data to Viz](https://www.data-to-viz.com/) by [Yan Holtz](https://twitter.com/R_Graph_Gallery) and [Conor Healy](http://www.conor.fr/indexEN.html)
+-   [The R Graph Gallery](https://www.r-graph-gallery.com/) by [Yan
+    Holtz]()
+-   [From Data to Viz](https://www.data-to-viz.com/) by [Yan
+    Holtz](https://twitter.com/R_Graph_Gallery) and [Conor
+    Healy](http://www.conor.fr/indexEN.html)
